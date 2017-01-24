@@ -36,6 +36,12 @@ namespace Day2_01._24._17
              * Schema = structure (What does the database table hold?)
              */
 
+            /*--------------DATABASE PERFORMANCE------------
+             * 
+             * Try to limit your queries as much as possible to 
+             * just the information you need to optimize performance
+             * 
+             * /
 
             /* --------------HOMEWORK - 10:39AM----------------
              * 

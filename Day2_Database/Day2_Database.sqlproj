@@ -62,5 +62,6 @@
     <Build Include="create_band_table.sql" />
     <Build Include="create_album_table.sql" />
     <Build Include="Basic_Selects.sql" />
+    <Build Include="OrderBy_Select.sql" />
   </ItemGroup>
 </Project>
