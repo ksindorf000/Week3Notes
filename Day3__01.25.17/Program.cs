@@ -8,8 +8,9 @@ namespace Day3__01._25._17
 {
     class Program
     {
-        /*------------ ENTITY FRAMEWORK ------------
-         * https://drive.google.com/file/d/0B8ie37YIHMJURFpmZHVSTDgtbkU/view?usp=sharing
+        /*------------ ENTITY FRAMEWORK (EF) ------------
+         * Diagram: 
+         *    https://drive.google.com/file/d/0B8ie37YIHMJURFpmZHVSTDgtbkU/view?usp=sharing
          * 
          * Project =>  Manage NuGet Packages => EntityFramework => Install
          * 
@@ -17,6 +18,33 @@ namespace Day3__01._25._17
          * 
          * SQL Server Object Explorer
          */
+
+        /* MIGRATIONS:
+         * 
+         * View > Other Windows > Package Manager Console (PMS)
+         * Set Default Project to current project
+         * PMC >> Enable-Migrations
+         *      Creates a Migrations Directory (Solution Explorer)
+         *      LOOK AT THE TIMESTAMPS (migrations HAVE to be run in order)
+         * 
+         * DROP: Delete Table(s)
+         * TRUNCATE: Delete data
+         * UP: Do this (Add)
+         * DOWN: Reverse the UP
+         * 
+         * SoluExp > Project > Migrations > COnfiguration.cs > SEED()
+         *      Allows you to add data at db creation
+         *      
+         * UPDATE TABLE SCHEMA:
+         *  Step 1) Make change to model
+         *  Step 2) PMC >> Add-Migration [WhatThisUpdateIs]*
+         *  Step 3) PMC >> Update-Database
+         *  Step 4) Close/Reopen table data window to see change
+         *  
+         *      *This doesn't change the db. Just creates the migration script
+         */
+
+        //LINQ: How to query the db from EF
 
         static void Main(string[] args)
         {
@@ -50,7 +78,6 @@ namespace Day3__01._25._17
                 //db.SaveChangesAsync(); //Asyncronus - Add changes to que, go do other stuff
             }
 
-            
 
             //CreateReviews();
         }
