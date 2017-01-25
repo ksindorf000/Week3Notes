@@ -8,12 +8,42 @@ namespace Day3__01._25._17
 {
     class Program
     {
+        /*------------ ENTITY FRAMEWORK ------------
+         * https://drive.google.com/file/d/0B8ie37YIHMJURFpmZHVSTDgtbkU/view?usp=sharing
+         * 
+         * Project =>  Manage NuGet Packages => EntityFramework => Install
+         * 
+         * "Context" = Relationship between code and database
+         * 
+         * SQL Server Object Explorer
+         */
+
         static void Main(string[] args)
         {
-            /*------------ PROPERTIES ------------
-             * 
-             */
+            //"using" cleans up behind itself (closes file, db, etc)
+            using (var db = new MovieReviewContext())
+            {
+                Movie movie = new Movie
+                {
+                    Title = "Days of Thunder",
+                    Genre = "Drama",
+                    ReleaseDate = DateTime.Today
+                };
 
+                db.Movie.Add(movie);
+                db.SaveChanges(); //Syncronus - Add changes to que, wait until this has been saved
+                //db.SaveChangesAsync(); //Asyncronus - Add changes to que, go do other stuff
+            }
+
+            
+
+            //CreateReviews();
+        }
+
+        /*------------ IntroToProperties --------------*/
+
+        private static void CreateReviews()
+        {
             //"Old" way
             //Person joel = new Person("programmer", 21, 'f');
 
