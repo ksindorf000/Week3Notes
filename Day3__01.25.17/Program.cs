@@ -30,7 +30,22 @@ namespace Day3__01._25._17
                     ReleaseDate = DateTime.Today
                 };
 
+                Person myPerson = new Person
+                {
+                    Occupation = "Race Car Driver",
+                    Age = 30
+                };
+
+                Review myReview = new Review
+                {
+                    Person = myPerson,
+                    Movie = movie,
+                    Rating = 7
+                };
+
                 db.Movie.Add(movie);
+                db.Person.Add(myPerson);
+                db.Review.Add(myReview);
                 db.SaveChanges(); //Syncronus - Add changes to que, wait until this has been saved
                 //db.SaveChangesAsync(); //Asyncronus - Add changes to que, go do other stuff
             }

@@ -12,7 +12,7 @@ namespace Day3__01._25._17 //Model Directory
         public Person Person { get; set; }
         public Movie Movie { get; set; }
         public int Rating { get; set; }
-        
+
         public override string ToString()
         {
             return $"Someone from {Person.City} rated {Movie.Title} {Rating}/10 stars";

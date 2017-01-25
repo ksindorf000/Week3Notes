@@ -52,6 +52,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201701251550119_InitialCreate.cs" />
+    <Compile Include="Migrations\201701251550119_InitialCreate.Designer.cs">
+      <DependentUpon>201701251550119_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701251640078_AddCommentToReview.cs" />
+    <Compile Include="Migrations\201701251640078_AddCommentToReview.Designer.cs">
+      <DependentUpon>201701251640078_AddCommentToReview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701251653520_DroppedCommentColumn.cs" />
+    <Compile Include="Migrations\201701251653520_DroppedCommentColumn.Designer.cs">
+      <DependentUpon>201701251653520_DroppedCommentColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="MovieReviewContext.cs" />
@@ -62,6 +75,17 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201701251550119_InitialCreate.resx">
+      <DependentUpon>201701251550119_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701251640078_AddCommentToReview.resx">
+      <DependentUpon>201701251640078_AddCommentToReview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701251653520_DroppedCommentColumn.resx">
+      <DependentUpon>201701251653520_DroppedCommentColumn.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
