@@ -11,6 +11,6 @@ namespace Day4.Models
         public int Id { get; set; }
         public Customer Customer { get; set; }
         public DateTime OrderDate { get; set; }
-        public double Discount { get; set; }
+        public double Discount { get; set; } //Percentage
     }
 }

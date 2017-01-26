@@ -19,5 +19,9 @@ namespace Day4
              */
 
         }
+        /*
+         * If you're going to be wrong, be consistantly wrong.
+         *      (Don't mix naming conventions in a project) 
+         */
     }
 }
