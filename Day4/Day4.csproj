@@ -56,6 +56,18 @@
     <Compile Include="Migrations\201701261513251_Initial.Designer.cs">
       <DependentUpon>201701261513251_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201701261558028_AddedNameToCustomers.cs" />
+    <Compile Include="Migrations\201701261558028_AddedNameToCustomers.Designer.cs">
+      <DependentUpon>201701261558028_AddedNameToCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701261643441_AddedAccessorForCustomerInOrders.cs" />
+    <Compile Include="Migrations\201701261643441_AddedAccessorForCustomerInOrders.Designer.cs">
+      <DependentUpon>201701261643441_AddedAccessorForCustomerInOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701261651033_AddedVirtualAccessorToOrderItem.cs" />
+    <Compile Include="Migrations\201701261651033_AddedVirtualAccessorToOrderItem.Designer.cs">
+      <DependentUpon>201701261651033_AddedVirtualAccessorToOrderItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Order.cs" />
@@ -72,6 +84,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201701261513251_Initial.resx">
       <DependentUpon>201701261513251_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701261558028_AddedNameToCustomers.resx">
+      <DependentUpon>201701261558028_AddedNameToCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701261643441_AddedAccessorForCustomerInOrders.resx">
+      <DependentUpon>201701261643441_AddedAccessorForCustomerInOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701261651033_AddedVirtualAccessorToOrderItem.resx">
+      <DependentUpon>201701261651033_AddedVirtualAccessorToOrderItem.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
