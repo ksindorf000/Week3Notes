@@ -14,14 +14,15 @@ namespace Day3__01._25._17
          * 
          * Project =>  Manage NuGet Packages => EntityFramework => Install
          * 
-         * Step 1) Create models
-         * Step 2) Create Context.cs
-         *  Step 2a) Context : DbContext
-         *  Step 2b) using System.Data.Entity
-         *  Step 2c) public DbSet<Class> TableName { get; set; }
-         * Step 3) PMC >> Enable-Migrations
-         * Step 4) PMC >> Add-Migration [Description]
-         * Step 5) PMC >> Update-Database
+         * Step 1) Install Entity Framework Package
+         * Step 2) Create models
+         * Step 3) Create Context.cs
+         *        a) Context : DbContext
+         *        b) using System.Data.Entity
+         *        c) public DbSet<Class> TableName { get; set; }
+         * Step 4) PMC >> Enable-Migrations
+         * Step 5) PMC >> Add-Migration [Description]
+         * Step 6) PMC >> Update-Database
          * 
          * "Context" = Relationship between code and database
          * 
